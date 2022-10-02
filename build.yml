@@ -5,3 +5,13 @@ trigger:
     - releases/*
     exclude:
     - releases/old*
+stages:
+- stage: A
+  jobs:
+  - job: A1
+  - job: A2
+
+- stage: B
+  jobs:
+  - job: B1
+  - job: B2
